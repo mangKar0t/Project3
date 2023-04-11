@@ -7,10 +7,12 @@
 
 import Foundation
 
-class Magus {
-    var healthPoints = 150
-    var weaponDamage = 5
-    var carePoints = 10
+class Magus: Caracter {
+    let carePoints = 10
+    
+    override init(name: String, healthPoints: Int, weaponDamage: Int, weapon: String) {
+        super.init(name: <#T##String#>, healthPoints: 150, weaponDamage: 5, weapon: "")
+    }
 
 // Function care
     func care(target: Caracter, carer: Magus) {

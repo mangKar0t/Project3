@@ -7,7 +7,8 @@
 
 import Foundation
 
-class Warrior {
-    var healthPoints = 100
-    var weaponDamage = 10
+class Warrior: Caracter {
+    override init(name: String, healthPoints: Int, weaponDamage: Int, weapon: String) {
+        super.init(name: <#T##String#>, healthPoints: 100, weaponDamage: 10, weapon: "Sword")
+    }
 }

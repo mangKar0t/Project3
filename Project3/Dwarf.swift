@@ -7,7 +7,8 @@
 
 import Foundation
 
-class Dwarf {
-    var healthPoints = 75
-    var weaponDamage = 20
+class Dwarf: Caracter {
+    override init(name: String, healthPoints: Int, weaponDamage: Int, weapon: String) {
+        super.init(name: <#T##String#>, healthPoints: 60, weaponDamage: 20, weapon: "Hammer")
+    }
 }

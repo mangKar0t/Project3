@@ -7,7 +7,8 @@
 
 import Foundation
 
-class Colossus {
-    var healthPoints = 200
-    var weaponDamage = 15
+class Colossus: Caracter {
+    override init(name: String, healthPoints: Int, weaponDamage: Int, weapon: String) {
+        super.init(name: <#T##String#>, healthPoints: 125, weaponDamage: 5, weapon: "Axe")
+    }
 }

@@ -7,28 +7,26 @@
 
 import Foundation
 
-// Player class
-class Player {
-    var name = ""
-
-    func createCaracter() {
-        name = readLine()!
-    }
-}
-
 // Caracter class
 class Caracter {
-    var name = ""
+    var name: String
     var healthPoints = 0
-    var weapon = ""
     var weaponDamage = 0
-    var isAlive: Bool
+    var weapon = ""
+    var isAlive: Bool {
+        get {
+            return true
+        }
+        set {
+            
+        }
+    }
 
-    init(name: String, weapon: String, healthPoints: Int, weaponDamage: Int) {
+    init(name: String, healthPoints: Int, weaponDamage: Int, weapon: String) {
         self.name = name
-        self.weapon = weapon
         self.healthPoints = healthPoints
         self.weaponDamage = weaponDamage
+        self.weapon = weapon
         self.isAlive = true
     }
 
@@ -45,8 +43,6 @@ class Caracter {
         }
     }
 }
-
-// Create the game with two players.
 
 func pass() {
     
