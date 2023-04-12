@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Magus: Caracter {
+class Magus: Character {
     let carePoints = 10
     
     override init(name: String, healthPoints: Int, weaponDamage: Int, weapon: String) {

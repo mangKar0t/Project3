@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Dwarf: Caracter {
+class Dwarf: Character {
     override init(name: String, healthPoints: Int, weaponDamage: Int, weapon: String) {
         super.init(name: <#T##String#>, healthPoints: 60, weaponDamage: 20, weapon: "Hammer")
     }

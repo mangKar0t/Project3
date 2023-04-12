@@ -7,48 +7,16 @@
 
 import Foundation
 
-// Caracter class
-class Caracter {
-    var name: String
-    var healthPoints = 0
-    var weaponDamage = 0
-    var weapon = ""
-    var isAlive: Bool {
-        get {
-            return true
-        }
-        set {
-            
-        }
-    }
 
-    init(name: String, healthPoints: Int, weaponDamage: Int, weapon: String) {
-        self.name = name
-        self.healthPoints = healthPoints
-        self.weaponDamage = weaponDamage
-        self.weapon = weapon
-        self.isAlive = true
-    }
-
-//Function attack
-    func attack(target: Caracter, attacker: Caracter) {
-        target.healthPoints -= attacker.weaponDamage
-        
-        if target.healthPoints <= 0 {
-            target.isAlive = false
-        }
-    }
-    
-    func pass() {
-        
-    }
-    
-    
-}
 
 // The player have to choose a caracter for his team.
 var player1: [Any] = []
 var player2: [Any] = []
+
+
+game.pickupcaracter(player1)
+
+game.
 
 print("Player 1 choose yours caracters")
 for i in 1...3 {
