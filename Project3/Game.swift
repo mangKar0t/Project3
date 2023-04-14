@@ -8,5 +8,7 @@
 import Foundation
 
 class Game {
-    
+    func pickupcharacter() {
+        
+    }
 }

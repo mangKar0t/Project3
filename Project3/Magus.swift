@@ -8,14 +8,14 @@
 import Foundation
 
 class Magus: Character {
-    let carePoints = 10
+    let carePoints: Int = 10
     
-    override init(name: String, healthPoints: Int, weaponDamage: Int, weapon: String) {
+    init(name: String) {
         super.init(name: <#T##String#>, healthPoints: 150, weaponDamage: 5, weapon: "")
     }
 
 // Function care
-    func care(target: Caracter, carer: Magus) {
+    func care(target: Character, carer: Magus) {
         target.healthPoints += carer.carePoints
     }
 }

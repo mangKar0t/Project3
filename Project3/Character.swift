@@ -11,8 +11,8 @@ import Foundation
 class Character {
     var name: String
     var healthPoints: Int = 0
-    var weaponDamage = 0
-    var weapon = ""
+    var weaponDamage: Int = 0
+    var weapon: String
     var isAlive: Bool {
         get {
             return healthPoints > 0
@@ -38,6 +38,4 @@ class Character {
     func pass() {
         
     }
-    
-    
 }
