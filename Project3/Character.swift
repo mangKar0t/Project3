@@ -34,8 +34,4 @@ class Character {
     func attack(target: Character, attacker: Character) {
         target.healthPoints -= attacker.weaponDamage
     }
-    
-    func pass() {
-        
-    }
 }

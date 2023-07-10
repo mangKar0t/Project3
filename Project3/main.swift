@@ -7,6 +7,8 @@
 
 import Foundation
 
+//
 var currentGame: Game = Game()
+// The player have to choose a caracter for his team.
 currentGame.createCharacter(player: &currentGame.player1)
 currentGame.createCharacter(player: &currentGame.player2)

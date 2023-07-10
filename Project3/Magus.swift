@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Definition of Magus classs
 class Magus: Character {
     let carePoints: Int = 10
     
@@ -14,7 +15,7 @@ class Magus: Character {
         super.init(name: "", healthPoints: 150, weaponDamage: 5, weapon: "")
     }
 
-// Function care
+// Function for caring character
     func care(target: Character, carer: Magus) {
         target.healthPoints += carer.carePoints
     }
