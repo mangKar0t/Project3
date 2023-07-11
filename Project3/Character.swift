@@ -13,7 +13,7 @@ internal class Character {
     var healthPoints: Int = 0
     var weaponDamage: Int = 0
     var weapon: String // Je dois avoir une classe Weapon.
-    var isAlive: Bool {
+    var playerIsAlive: Bool {
         get {
             return healthPoints > 0
         }
@@ -27,7 +27,7 @@ internal class Character {
         self.healthPoints = healthPoints
         self.weaponDamage = weaponDamage
         self.weapon = weapon
-        self.isAlive = true
+        self.playerIsAlive = true
     }
 
 //Function attack

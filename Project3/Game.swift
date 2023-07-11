@@ -17,17 +17,22 @@ internal class Game {
         self.player2 = player2
     }
     
-
+    var playerIsDead: Bool
+    var winner: String
 
     //Function that set the character name
     func setName() {
-        print("The name of the caracter \() is:")
+        print("The name of the character is:")
         guard let name = readLine()
         else {
             print("You did not give a name!")
             setName()
             return
         }
+    }
+    
+    func fight() {
+        
     }
 }
 

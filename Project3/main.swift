@@ -9,6 +9,7 @@ import Foundation
 
 //
 private var currentGame: Game = Game(player1: <#T##Player#>, player2: <#T##Player#>)
+private var playerScore: Player = Player()
 // The player have to choose a caracter for his team.
 //currentGame.createCharacter(player: &currentGame.player1)
 //currentGame.createCharacter(player: &currentGame.player2)
@@ -20,7 +21,7 @@ for _ in 0...2  {
     }
 }
  // Afficher les informations de chaque joueur.
-
+playerScore.saveScore()
 
 /*
  While  !game.playerIsDead {
@@ -28,5 +29,11 @@ for _ in 0...2  {
          player.fight()
      }
  }
- 
  */
+
+//While all the characters aren't dead, fight.
+while !currentGame.playerIsDead {
+    for player in [currentGame.player1, currentGame.player2]  {
+        player.fight()
+    }
+}

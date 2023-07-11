@@ -8,5 +8,7 @@
 import Foundation
 
 internal class Weapon {
-    
+    var name: [String] = ["Hammer","Axe","Stick","Sword"]
+    var damage: [Int] = [20, 5, 5, 10]
+    var care: [Int] = [10]
 }

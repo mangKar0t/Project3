@@ -17,21 +17,17 @@ internal class Player {
         var nbOfCharacters: Int = 1
         print("Choose yours characters")
         //While the player hasn't choose 3 characters repeat the loop.
-        
-        
-        
-        
         // A déplacer
         /* while nbOfCharacters <= 3 {
-            print("1. Warrior")
-            print("2. Colossus")
-            print("3. Magus")
-            print("4. Dwarf")
-            // Waiting for player choice.
-            let choice = Int(readLine()!)
-            //Enter the character name.
-            
-        } */
+         print("1. Warrior")
+         print("2. Colossus")
+         print("3. Magus")
+         print("4. Dwarf")
+         // Waiting for player choice.
+         let choice = Int(readLine()!)
+         //Enter the character name.
+         
+         } */
     }
     
     // Function that create the team
@@ -39,26 +35,19 @@ internal class Player {
         
     }
     
-    
-    // A transformer en méthode
-    // var score: [String: Int] = [:]
-    
-    func saveScore() {
+    func fight() {
         
-        // Mettre une boucle for...
-        for i in character {
-            score += i
-        }
-        
-        
-        score += character.healthPoints
-        
-        
-        //player1.healthPoints += character.healthPoints
-        //player2.healthPoints += healthPoints
-        
-        print("player1 has \(score) healthpoints.")
-        print("player2 has \(score) healthpoints.")
     }
     
+    func saveScore() {
+        for _ in character {
+            score += character.healthPoints
+            if player1 {
+                print("player1 has \(score) healthpoints.")
+            }
+            else {
+                print("player2 has \(score) healthpoints.")
+            }
+        }
+    }
 }
