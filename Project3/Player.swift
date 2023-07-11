@@ -11,6 +11,7 @@ import Foundation
 internal class Player {
     var character: [Character] = []
     var score = 0
+    var save: Character = Character(healthPoints: <#T##Int#>)
     
     // Function that create character
     func createCharacter() {
@@ -39,9 +40,9 @@ internal class Player {
         
     }
     
-    func saveScore() {
-        for _ in character {
-            score += character.healthPoints
+    func saveScore(character: Character) {
+        for _ in character.healthPoints {
+            score += save.healthPoints
             if player1 {
                 print("player1 has \(score) healthpoints.")
             }

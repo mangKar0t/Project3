@@ -11,8 +11,7 @@ import Foundation
 internal class Character {
     var name: String
     var healthPoints: Int = 0
-    var weaponDamage: Int = 0
-    var weapon: String // Je dois avoir une classe Weapon.
+    var weaponDamage: Weapon
     var playerIsAlive: Bool {
         get {
             return healthPoints > 0
@@ -22,16 +21,18 @@ internal class Character {
         }
     }
 
-    init(name: String, healthPoints: Int, weaponDamage: Int, weapon: String) {
+    init(name: String, healthPoints: Int) {
         self.name = name
         self.healthPoints = healthPoints
-        self.weaponDamage = weaponDamage
-        self.weapon = weapon
         self.playerIsAlive = true
+    }
+    
+    convenience init(healthPoints: Int) {
+        self.init(healthPoints: <#T##Int#>)
     }
 
 //Function attack
     func attack(target: Character, attacker: Character) {
-        target.healthPoints -= attacker.weaponDamage
+        target.healthPoints -= attacker.weaponDamage.damage
     }
 }

@@ -7,8 +7,15 @@
 
 import Foundation
 
-internal class Weapon {
-    var name: [String] = ["Hammer","Axe","Stick","Sword"]
-    var damage: [Int] = [20, 5, 5, 10]
-    var care: [Int] = [10]
+internal class Weapon: Character {
+    var damage: Int
+    var care: Int
+    
+    init(damage: Int) {
+        self.damage = damage
+    }
+    
+    init(care: Int) {
+        self.care = care
+    }
 }
