@@ -8,11 +8,11 @@
 import Foundation
 
 // Caracter class
-class Character {
+internal class Character {
     var name: String
     var healthPoints: Int = 0
     var weaponDamage: Int = 0
-    var weapon: String
+    var weapon: String // Je dois avoir une classe Weapon.
     var isAlive: Bool {
         get {
             return healthPoints > 0

@@ -8,7 +8,7 @@
 import Foundation
 
 // Definition of Dwarf class
-class Dwarf: Character {
+internal class Dwarf: Character {
     init(name: String) {
         super.init(name: "", healthPoints: 60, weaponDamage: 20, weapon: "Hammer")
     }

@@ -8,7 +8,7 @@
 import Foundation
 
 // Definition of Magus classs
-class Magus: Character {
+internal class Magus: Character {
     let carePoints: Int = 10
     
     init(name: String) {

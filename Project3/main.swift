@@ -8,7 +8,25 @@
 import Foundation
 
 //
-var currentGame: Game = Game()
+private var currentGame: Game = Game(player1: <#T##Player#>, player2: <#T##Player#>)
 // The player have to choose a caracter for his team.
-currentGame.createCharacter(player: &currentGame.player1)
-currentGame.createCharacter(player: &currentGame.player2)
+//currentGame.createCharacter(player: &currentGame.player1)
+//currentGame.createCharacter(player: &currentGame.player2)
+
+
+for _ in 0...2  {
+    for player in [currentGame.player1, currentGame.player2]  {
+        player.createCharacter()
+    }
+}
+ // Afficher les informations de chaque joueur.
+
+
+/*
+ While  !game.playerIsDead {
+     For player in player1 player2  {
+         player.fight()
+     }
+ }
+ 
+ */
